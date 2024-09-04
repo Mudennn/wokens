@@ -243,7 +243,7 @@ export function WokensApp() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span><strong className="text-[#df6a29]">High ROI Potential:</strong> Benefit from the appreciation of aged whisky, a historically strong-performing asset class.</span>
+                      <span><strong className="text-[#df6a29]">High ROI Potential:</strong> Benefit from the appreciation of aged  whisky, a historically strong-performing asset class.</span>
                     </li>
                     <li className="flex items-start">
                       <div className="mr-2 mt-1 bg-[#df6a29] rounded-full p-1">
@@ -468,7 +468,7 @@ export function WokensApp() {
                     <div className="flex items-center">
                       <Instagram className="mr-2 text-[#df6a29]" />
                       <div>
-                        <p className="font-semibold text-[#df6a29]">Join Wokens's Instagram</p>
+                        <p className="font-semibold text-[#df6a29]">Join Wokens&apos;s Instagram</p>
                         <p className="text-sm text-white">+90 WP</p>
                       </div>
                     </div>
