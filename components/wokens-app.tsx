@@ -18,14 +18,23 @@ interface Droplet {
   value: number;
 }
 
+type PoolType = 'upcoming' | 'running' | 'ended';
+
+interface Pool {
+  name: string;
+  apy: number;
+  progress: number;
+  minStake: number;
+}
+
 export function WokensApp() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeTab, setActiveTab] = useState('home')
   const [activeQuestTab, setActiveQuestTab] = useState('invite')
   const [email, setEmail] = useState('')
   const [isBalanceHidden, setIsBalanceHidden] = useState(true)
-  const [activePool, setActivePool] = useState('running')
-  const [selectedCask, setSelectedCask] = useState(null)
+  const [activePool, setActivePool] = useState<PoolType>('upcoming') 
+  const [selectedCask, setSelectedCask] = useState<number | null>(null);
   const [userWokens, setUserWokens] = useState(50000)
   const [userWokensPoints, setUserWokensPoints] = useState(1000)
   const [userTickets, setUserTickets] = useState(10)
@@ -45,7 +54,7 @@ export function WokensApp() {
     { name: 'card', icon: CreditCard }
   ]
 
-  const pools = {
+  const pools: Record<PoolType, Pool[]> = {
     upcoming: [
       { name: "Macallan Rare Cask", apy: 26, progress: 0, minStake: 10000 },
       { name: "Yamazaki 18 Years", apy: 25, progress: 0, minStake: 15000 },
@@ -608,7 +617,7 @@ export function WokensApp() {
             </div>
 
             <nav className="flex justify-center mb-8 bg-[#df6a29]/10 rounded-lg p-2">
-              {['upcoming', 'running', 'ended'].map((pool) => (
+              {(['upcoming', 'running', 'ended'] as PoolType[]).map((pool: PoolType) =>(
                 <Button
                   key={pool}
                   className={`mx-2 ${
