@@ -557,7 +557,7 @@ export function WokensApp() {
             </section>
 
             {/* Community Section */}
-            <section className="text-center my-16">
+            <section className="text-center mt-16 mb-32">
               <h4 className="text-4xl underline decoration-2 mb-6 underline-offset-8">
                 JOIN OUR COMMUNITY
               </h4>
@@ -611,7 +611,7 @@ export function WokensApp() {
 
             {/* Invitation Tab */}
             {activeQuestTab === "invite" && (
-              <div>
+              <div className="mb-24">
                 <div className="text-center mb-6">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D2oZQXCPNYBgtUHI3hCeqF3y7M13KH.png"
@@ -712,7 +712,7 @@ export function WokensApp() {
 
             {/* Task Tab */}
             {activeQuestTab === "task" && (
-              <div>
+              <div className="mb-24">
                 <h2 className="text-3xl  mb-2 mt-14">Wokens socials 13</h2>
                 <p className="mb-6 text-white">
                   Join Wokens community, be aware of new and following updates,
@@ -825,7 +825,7 @@ export function WokensApp() {
         {activeTab === "game" && (
           <div className="flex flex-col items-center  text-white">
             {!isGameActive ? (
-              <div className="p-4 w-full max-w-md">
+              <div className="p-4 w-full max-w-md h-screen">
                 <div className="flex flex-col justify-center items-center text-center mb-8 mt-14">
                   <h3 className="text-2xl  mb-4">Babahajim</h3>
                   <Image
@@ -851,7 +851,7 @@ export function WokensApp() {
                   Start Droplet Game ({userTickets} 🎟️)
                 </Button>
 
-                <p className="text-sm text-white text-center">
+                <p className="text-sm text-white text-center mb-16">
                   {userTickets === 0
                     ? "No more tickets! Complete quests to earn more."
                     : `You have ${userTickets} ticket${
@@ -942,7 +942,7 @@ export function WokensApp() {
         )}
 
         {activeTab === "investment" && (
-          <div className="px-4 my-14">
+          <div className="px-4 mt-14 mb-24">
             <h2 className="text-4xl  gradient-underline mb-4">
               WOKENS Staking
             </h2>
@@ -1094,7 +1094,7 @@ export function WokensApp() {
         )}
 
         {activeTab === "card" && (
-          <div className="p-4">
+          <div className="p-4 mb-24">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl">DCASKS CRYPTO CARD</h2>
               <Bell className="text-[#df6a29]" />
