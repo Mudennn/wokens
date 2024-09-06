@@ -296,7 +296,7 @@ export function WokensApp() {
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="">
-                    <h3 className="text-lg">Whisky Investment Opportunities</h3>
+                    <h3 className="text-lg mb-4">Whisky Investment Opportunities</h3>
                   <div className="mb-4 bg-custom-gradient rounded-lg">
                     <Image
                       src="/Coin swap Barrel.webp"
