@@ -1,6 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h1, h2, h3{
+  background: linear-gradient(#DF6A29, #FFA108);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+h4, p {
+  color: #DF6A29;
+}
+
+.gradient-underline {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(#DF6A29, #FFA108);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 100%;
+  background-color: #DF6A29; 
+  z-index: -1;
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
