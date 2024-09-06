@@ -291,7 +291,7 @@ export function WokensApp() {
 
             {/* Key Features */}
             <section className=" mt-16">
-              <h4 className="text-4xl text-center underline mb-6">
+              <h4 className="text-4xl text-center underline mb-6 underline-offset-8">
                 KEY FEATURES
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
