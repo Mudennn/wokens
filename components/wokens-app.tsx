@@ -291,19 +291,19 @@ export function WokensApp() {
 
             {/* Key Features */}
             <section className=" mt-16">
-              <h2 className="text-4xl text-left gradient-underline mb-6">
+              <h4 className="text-4xl text-center underline mb-6">
                 KEY FEATURES
-              </h2>
+              </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="">
-                  <div className="flex justify-start items-center mb-4">
                     <h3 className="text-lg">Whisky Investment Opportunities</h3>
+                  <div className="mb-4 bg-custom-gradient rounded-lg">
                     <Image
                       src="/Coin swap Barrel.webp"
-                      alt="Wokens Logo"
-                      width={80}
-                      height={80}
-                      className="ml-4"
+                      alt="DCASKS Crypto Cards"
+                      width={600}
+                      height={300}
+                      className="w-full h-auto rounded-lg"
                     />
                   </div>
                   <ul className="space-y-4 text-white">
@@ -1107,6 +1107,7 @@ export function WokensApp() {
                 layout="fill"
                 fill={true}
                 objectFit="contain"
+                className="rounded-2xl"
               />
             </div>
 
